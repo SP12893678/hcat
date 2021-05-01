@@ -1,0 +1,69 @@
+#查詢
+1.1 hisGetBasicData (讀取不需個人PIN碼資料)
+1.2 hisGetRegisterBasic (掛號或報到時讀取基本資料)
+1.3 hisGetRegisterPrevent (預防保健掛號作業)
+1.4 hisGetRegisterPregnant (孕婦產前檢查掛號作業)
+1.5 hisGetTreatmentNoNeedHPC (讀取就醫資料不需HPC卡的部分)
+1.6 hisGetCumulativeData (讀取就醫累計資料)
+1.7 hisGetCumulativeFee (讀取醫療費用總累計)
+1.8 hisGetTreatmentNeedHPC (讀取就醫資料需要HPC卡的部份)
+1.10 hisReadPrescription (讀取處方箋作業)
+1.11 hisGetInoculateData (讀取預防接種資料)
+1.12 hisGetOrganDonate (讀取同意器官捐贈及安寧緩和醫療註記)
+1.13 hisGetEmergentTel  (讀取緊急聯絡電話資料)
+1.14 hisGetLastSeqNum (讀取最近一次就醫序號)
+1.15 hisGetCardStatus (讀取卡片狀態)
+1.33 hisGetCriticalIllness (讀取重大傷病註記資料)
+1.34 csGetDateTime (讀取讀卡機日期時間)
+1.35 csGetCardNo (讀取卡片號碼)
+1.38 hisGetRegisterBasic2(掛號或報到時讀取基本資料)	
+1.41 hisReadPrescriptMain (讀取就醫資料-門診處方箋)
+1.43 hisReadPrescriptHVE (讀取就醫資料-重要醫令)
+1.44 hisReadPrescriptAllergic (讀取就醫資料-過敏藥物)
+1.50 hisGetCriticalIllnessID (讀取重大傷病註記資料身分比對)
+#E
+#寫入
+1.16 hisWriteTreatmentCode (就醫診療資料寫入作業)
+1.17 hisWriteTreatmentFee (就醫費用資料寫入作業)
+1.20 hisWriteAllergicMedicines (過敏藥物寫入作業)
+1.22 hisWriteHealthInsurance (預防保健資料寫入作業)
+1.46 hisWriteAllergicNum (過敏藥物寫入指定欄位作業)
+1.47 hisWriteTreatmentData (就醫診療資料及費用寫入作業)
+1.48 hisWritePrescriptionSign (處方箋寫入作業-回傳簽章)---
+1.49 hisWriteMultiPrescriptSign (多筆處方箋寫入作業-回傳簽章)
+#E
+#掛號
+1.9 hisGetSeqNumber (取得就醫序號)
+1.37 hisGetSeqNumber256 (取得就醫序號新版)
+1.39 csUnGetSeqNumber(回復就醫資料累計值---退掛)
+#E
+#健保卡
+1.27 csVerifyHCPIN (驗證健保IC卡之PIN值)
+1.28 csInputHCPIN (輸入新的健保IC卡PIN值)
+1.29 csDisableHCPIN (停用健保IC卡之Pin碼輸入功能)
+1.30 csUpdateHCContents (健保IC卡卡片內容更新作業)
+1.36 csISSetPIN (檢查健保IC卡是否設定密碼)
+#E
+#醫師人員卡
+4.1 hpcGetHPCStatus (取得醫事人員卡狀態)
+4.2 hpcVerifyHPCPIN (檢查醫事人員卡之PIN值)
+4.3 hpcInputHPCPIN (輸入新的醫事人員卡之PIN值)
+4.4 hpcUnlockHPC (解開鎖住的醫事人員卡)
+4.5 hpcGetHPCSN (取得醫事人員卡序號)
+4.6 hpcGetHPCSSN (取得醫事人員卡身分證字號)
+4.8 hpcGetHPCENAME (取得醫事人員卡英文姓名)
+#E
+#安全模組
+2.1 csVerifySAMDC (SAM與DC認證)
+2.2 csGetHospID (讀取SAM院所代碼)
+#E
+#資料上傳
+3.1 csUploadData (資料上傳)
+3.2 csUploadDataPrec (資料上傳) 增加「處方筆數」參數
+3.3 csDownloadData (檢核錯誤報表資料自動下載)
+#E
+#系統
+1.34 csGetDateTime (讀取讀卡機日期時間)
+1.51 csGetVersionEx (取得控制軟體版本)
+1.52 csSoftwareReset (提供His重置讀卡機或卡片的API)
+#E
